@@ -51,7 +51,7 @@ while True:
         df = get_csv('National_Daily_Deaths.csv') 
         df2 = get_csv('National_Daily_ICU_Admissions.csv')
        
-       
+
         # linjegraf 1
         df['Date'] = pd.to_datetime(df['Date'], infer_datetime_format=True) # gör om datum string till datetime format
       
@@ -81,7 +81,7 @@ while True:
 
 
     elif val == 2:
-        df3 = pd.read_csv("Gender_Data.csv", sep=',')
+        df3 = get_csv('Gender_Data.csv')
 
         colorsdf = ['lightblue', 'pink']
 
