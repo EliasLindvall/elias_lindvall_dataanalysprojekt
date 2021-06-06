@@ -2,19 +2,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
 
-from pandas.io.parsers import read_csv
+
 from functions import *
-import csv
-from os import environ, sep
 
-def suppress_qt_warnings():
-    environ["QT_DEVICE_PIXEL_RATIO"] = "0"
-    environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
-    environ["QT_SCREEN_SCALE_FACTORS"] = "1"
-    environ["QT_SCALE_FACTOR"] = "1"
 
-if __name__ == "__main__":
-    suppress_qt_warnings()
+
+
 
 # Skapar en meny som ska visas för användaren
 
